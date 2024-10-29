@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+    <div style="display: flex; padding-inline: 250px; gap: 50px; align-items: center;">
+        <h1 style="font-variant: small-caps; font-family: Verdana, Geneva, Tahoma, sans-serif; font-size: 50px;  color: rgba(54, 54, 54, 0.74);">
+            todo
+        </h1>
+        <input type="text"  class="inpSearch" placeholder="search..." style="border-radius: 5px; border: 2.2px solid black;  height: 3.2vh; width: 230px; padding-inline: 6px; font-family: Arial, Helvetica, sans-serif; margin: auto; font-size: 15px;">
+
+
+        <h1 class="btnShadowDialog" style="font-family: Georgia, 'Times New Roman', Times, serif; font-size: 50px; cursor: pointer;">
+            +
+        </h1>
+
+        <fieldset style="width: 30%; height: 30px; border-radius: 5px; ">
+            <legend>Status</legend>
+    
+            <select style="width: 98%; margin: auto; margin-top: -50px; height: 30px; border: none; outline: none;" class="select-status">
+                <option value="" disabled hidden selected>ِВыберите статус</option>
+                <option value="All">All</option>
+                <option value="true">Active</option>
+                <option value="false">Inactive</option>
+            </select>
+        </fieldset>
+    </div>
+
+    <dialog class="Dialog" style="display: none; padding: 50px; border: none; background-color: #B7B1DD; border-radius: 5px;">
+        <div style="display: flex; align-items: center; justify-content: space-between; margin-top: -50px ; margin-bottom: 80px;">
+            <h1 style="font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif; font-size: 35px;">
+                Task 
+            </h1>
+            <h1 class="DialogClose" style="font-family: 'Courier New', Courier, monospace; cursor: pointer;">
+                x
+            </h1>
+        </div>
+        <p>
+            Title
+        </p>
+        <input class="inp1" type="text" placeholder="Name Theme..."  style="font-family : Verdana, Geneva, Tahoma, sans-serif; padding: 7px; width: 250px; ">
+        <p>
+            Job
+        </p>
+        <input class="inp2" type="text" placeholder="Information..." style="font-family : Verdana, Geneva, Tahoma, sans-serif; padding: 7px; width: 350px;">
+        <br>
+        <button class="btnAddDialog" style="background-color: rgba(0, 0, 0, 0.199); border: 1px dashed rgba(0, 0, 0, 0.445); cursor: pointer; font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif; font-size: 15px; padding: 5px; padding-inline: 50px; display: block; margin: auto; margin-top: 15px;"> Add </button>
+    </dialog>
+
+    <div style="padding-inline: 150px; display: flex; gap: 50px;">
+        <div>
+            
+        <div style="display: flex; align-items: center; gap: 35px;">
+            <span style="background-color: #B7B1DD; margin-top: 5px; border-radius: 50px; padding: 15px; font-size: 1px;">
+            </span>
+            <h1 style="font-family: Verdana, Geneva, Tahoma, sans-serif; font-size: 25px; color: #808080;">
+                work
+            </h1>
+        </div>
+        <div style="display: flex; align-items: center; gap: 35px;">
+            <span style="background-color: #81DCF0; margin-top: 5px; border-radius: 50px; padding: 15px; font-size: 1px;">
+            </span>
+            <h1 style="font-family: Verdana, Geneva, Tahoma, sans-serif; font-size: 25px; color: #808080;">
+                study
+            </h1>
+        </div>
+        <div style="display: flex; align-items: center; gap: 35px;">
+            <span style="background-color: #F8ABAB; margin-top: 5px; border-radius: 50px; padding: 15px; font-size: 1px;">
+            </span>
+            <h1 style="font-family: Verdana, Geneva, Tahoma, sans-serif; font-size: 25px; color: #808080;">
+                entertainment
+            </h1>
+        </div>
+        <div style="display: flex; align-items: center; gap: 35px;">
+            <span style="background-color: #90F3D0; margin-top: 5px; border-radius: 50px; padding: 15px; font-size: 1px;">
+            </span>
+            <h1 style="font-family: Verdana, Geneva, Tahoma, sans-serif; font-size: 25px; color: #808080;">
+                family
+            </h1>
+        </div>
+        <div style="display: flex; align-items: center; gap: 30px;">
+            <input type="checkbox">
+            <p style="font-style: italic; color: #808080; font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; font-weight: 600;">
+                Hide done task
+            </p>
+        </div>
+        
+    </div>
+        <div class="box" style="display: flex; flex-wrap: wrap; gap: 15px;">
+            
+        </div>
+    </div>
+
+
+
+    
+    <dialog class="Dialog2" style="display: none; padding: 50px; border: none; background-color: #606c3a; border-radius: 5px; position: absolute; top: 155px;">
+        <div style="display: flex; align-items: center; justify-content: space-between; margin-top: -50px ; margin-bottom: 80px;">
+            <h1 style="font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif; font-size: 35px;">
+                Edit 
+            </h1>
+            <h1 class="EditDialogClose" style="font-family: 'Courier New', Courier, monospace; cursor: pointer;">
+                x
+            </h1>
+        </div>
+        <p style="font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif; font-weight: 700;">
+            Name
+        </p>
+        <input class="inpEdit1" type="text" placeholder="Name Theme..."  style="font-family : Verdana, Geneva, Tahoma, sans-serif; padding: 7px; width: 250px; ">
+        <p style="font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif; font-weight: 700;">
+            Job
+        </p>
+        <input class="inpEdit2" type="text" placeholder="Information..." style="font-family : Verdana, Geneva, Tahoma, sans-serif; padding: 7px; width: 350px;">
+        <br>
+        <button class="btnEditDialog" style="background-color: rgba(0, 0, 0, 0.199); border: 1px dashed rgba(0, 0, 0, 0.445); cursor: pointer; font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif; font-size: 15px; padding: 5px; padding-inline: 50px; display: block; margin: auto; margin-top: 15px;"> Change Name </button>
+    </dialog>
+
+
+
+
+    <script src="TodoList.js"></script>
+</body>
+</html>
